@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h1 span{
+    color: rgb(255, 0, 0);
+}
+.wrapper{
+    text-align: center;
+}
+/*
+.drop{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: display;
+    animation-duration: 10s;
+}
+@keyframes display {
+    from{background-color: red;}
+    to{background-color: rgb(0, 64, 255);}
+}
+*/
+
+.drop {
+    position: relative;
+    animation-name: drop;
+    animation-fill-mode: forwards;
+    padding: 20px;
+    animation-duration:4s;  
+
+  }
+  
+  @keyframes drop {
+    from {top: -200px;}
+    to {top: 0px;}
+  }

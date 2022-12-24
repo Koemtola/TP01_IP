@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#h1 span{
+    color: rgb(255, 0, 0);
+}
+.container{
+    margin: auto;
+    overflow: scroll;
+    width: 600px;
+    height: 500px;
+}
+.header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    color: white;
+    background-color: blue;
+    overflow: hidden;
+}
+
