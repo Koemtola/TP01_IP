@@ -1,0 +1,130 @@
+body {
+    background-color: rgba(241, 238, 238, 0.899);
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.add {
+    height: 100%;
+    width: 195px;
+    background-color: rgb(247, 245, 238);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.add>div {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(197, 190, 190);
+    margin-bottom: 20px;
+    font-size: medium;
+    padding-top: 15px 10px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.add input[type=text] {
+    width: 100%;
+    border: 2px solid rgb(58, 58, 60);
+    border-radius: 5px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.add input[type=text]:focus {
+    border-color: rgb(233, 237, 240);
+    box-shadow: 0 0 8px 0 rgb(218, 224, 229);
+}
+
+.edit_book {
+    visibility: hidden;
+}
+
+.home {
+    height: auto;
+    width: 1000px;
+    top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: #fffffffc;
+    overflow-y: scroll;
+
+}
+
+.book-info {
+    background-color: rgb(216, 228, 229);
+    padding-top: 15px;
+    text-align: center;
+    height: 35px;
+    color: #292727;
+    position: sticky;
+    width: 820px;
+    margin: 10px 0 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.items {
+    text-align: center;
+    width: 28%;
+    margin: 1%;
+    margin-left: 1%;
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 17px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 15px;
+}
+
+.items>img {
+    margin: 10px 10px;
+}
+
+.items .name,.price,.category {
+    text-align: start;
+    margin: 10px 10px;
+}
+
+.button {
+    margin: 10px 5px;
+}
+
+.editBtn,.deleteBtn {
+    border-radius: 5px;
+    background-color: rgb(52, 55, 233);
+    color: rgb(255, 255, 255);
+    border-style: outset;
+    border: none;
+    height: 35px;
+}
+
+.deleteBtn {
+    margin-left: 5px;
+    background-color: rgb(243, 63, 63);
+}
+
+.edit_book {
+    margin-left: -55px;
+    text-align: center;
+    width: 60px;
+}
+
+.items>img {
+    height: 100px;
+    width: 100px;
+}
+.header-add{
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    height: 35px;
+    background-color: rgb(216, 228, 229);
+    border-radius: 5px;
+
+}

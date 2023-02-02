@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+    <div class="main">
+        <p>Given Login Information</p>
+        <p>Email = gic@gmail.com</p>
+        <p>Password = Gic123</p>
+        <div class="wrapper">
+            <div class="main-img">
+                <img src="./Images/user.png" alt="user">
+            </div>
+            <div class="main-input">
+                          <div class="input">
+                <label for="email"><strong>Email</strong></label><br>
+                <input id="email" type="text" placeholder="Enter email">
+                </div>
+                <div class="input">
+                    <label for="password"><strong>Password</strong></label><br>
+                    <input id="password" type="text" placeholder="Enter Password">
+                </div>
+                <div class="input">
+                    <button id="login" onclick="login();">Login</button>
+                </div>
+            </div>
+           <script src="./script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

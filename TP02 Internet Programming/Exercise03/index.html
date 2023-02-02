@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise <span>03</span></h1>
+    <div class="main">
+        <canvas id="canvas"></canvas><br>
+
+        <div class="uploader">
+            <p>Canvas😆:Insert me an image please!</p>
+            <input id="uploader" type="file">
+        </div>
+    </div>
+    <script>
+        var canvas=document.getElementById("canvas");
+        var ctx=canvas.getContext("2d");
+        var uploader=document.getElementById("uploader");
+        uploader.addEventListener("change",(e)=>{
+            var myFile=uploader.files[0];
+            var img=new Image();
+            img.src=URL.createObjectURL(myFile);
+            img.onload=function(){
+                img.width=canvas.width;
+                ctx.drawImage(img,0,0,canvas.width,canvas.height);
+            }
+        })
+    </script>
+</body>
+</html>
