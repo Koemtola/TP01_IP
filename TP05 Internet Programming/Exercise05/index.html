@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ------------------------------ link font ------------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        span{
+            color: blue;
+        }
+        .main{
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper-left{
+            height: 100%;
+            width: 25%;
+            background: rgb(212, 212, 212);
+        }
+        .wrapper-right{
+            height: 100%;
+            width: 75%;
+            background: rgb(238, 238, 240);
+            overflow-y: scroll;
+        }
+        label{  
+            padding: 5px;
+        }
+        label,input,button{
+            margin: 6px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #box{
+            width: 150px;
+            height: 150px;
+            background: rgb(212, 7, 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .content{
+            width: 150px;
+            padding: 10px;
+            height: auto;
+            background: white;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        #demo{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        #loading {
+            margin: auto;
+            margin-top: 35%;
+            border: 3px solid rgb(255, 136, 0);
+            border-radius: 50%;
+            border-top: 3px solid rgb(228, 228, 226);
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 0.9s linear infinite; /* Safari */
+            animation: spin 0.9s linear infinite;
+        }
+            /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercise<span> 05</span></h1>
+    <div class="main">
+        <div class="wrapper-left">
+            <label for="">Name:</label><br>
+            <input id="myTitle" type="text" placeholder="c programming"><br>
+            <label for="">Category:</label><br>
+            <input id="category" type="text" placeholder="coding"><br>
+            <label for="" >Price:</label><br>
+            <input id="price"  type="text" placeholder="riel"><br>
+            <button onclick=" addBook()">add</button>
+        </div>
+        <div class="wrapper-right">
+            <div id="loading" hidden></div>
+            <div id="demo"></div>
+            <div id="demoAdd"></div>
+        </div>
+    </div>
+    <script>
+        const demo=document.getElementById("demo");
+        const demoAdd=document.getElementById("demoAdd");
+        const loader=document.getElementById("loading");
+        let tmp=1;
+        main();
+        function main() {
+            loader.hidden=false;
+            listOfBook() ;
+        }
+        function addBook() {
+            var title=document.getElementById("myTitle").value;
+            var price=document.getElementById("price").value;
+            var category=document.getElementById("category").value;
+            let results="";
+            for(var i=0; i<tmp ;i++){
+                results=results+`
+                <div class="content">
+                    <div id="box" >New item</div>
+                    <div id="title">${title}</div>
+                    <div id="id">Album Id : ${price} riel</div>
+                    <div id="category">Category : ${category}</div>
+                    <a href="#" target="_blank">See</a>
+                </div>
+                `
+            }
+            tmp=tmp+1;
+            demoAdd.innerHTML=results;
+        }
+        function listOfBook() {
+            fetch('https://jsonplaceholder.typicode.com/photos')
+            .then(async(response)=>{
+            let data = await response.json();
+            let results="";
+            for(var i=0; i<data.length;i++){
+                results=results+`
+                <div class="content">
+                    <img id="box" src="${data[i].thumbnailUrl}" alt=""></img>
+                    <div id="title">${data[i].title}</div>
+                    <div id="id">Aldum Id : ${data[i].id} riel</div>
+                    <div id="category">Category : 1</div>
+                    <a href="./viewDetail.html?id=${data[i].id}" target="_blank">See</a>
+                </div>
+                `
+            }
+            demo.innerHTML=results;
+            loader.hidden=true; 
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span{
+    color: rgb(13, 0, 255);
+}
+.main{
+    margin: auto;
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px 1px black;
+    border-radius: 8px;
+}
+p{
+    text-align: center;
+}
+#img{
+    font-size: 80px;
+}
+#title{
+    font-family: Irish Grover;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.input-values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    padding: 8px;
+    margin: 2px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+button{
+    background: blue;
+    border-color: blue;
+    color: white;
+}
+#row{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 246px;
+    height: 35px;
+    background: rgb(226, 225, 220);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    border: none;
+}
+#main-row{
+    margin-bottom: 18px;
+}
+#country,#probability{
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(255, 153, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#country{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+#probability{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(255, 94, 0);
+}
+#reaction{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+#reaction-2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(255, 89, 0);
+}
+#loading {
+    margin: auto;
+    border: 13px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 13px solid blue;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 0.3s linear infinite; /* Safari */
+    animation: spin 0.9s linear infinite;
+}
+    /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

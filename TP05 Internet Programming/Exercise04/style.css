@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span{
+    color: blue;
+}
+.main{
+    margin: auto;
+    width: 800px;
+    height: 450px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    box-shadow: 1px 2px 2px 1px black;
+    border-radius: 5px;
+}
+#img{
+    font-size: 50px;
+    text-align: center;
+}
+#title{
+    font-family: Irish Grover;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.block-list{
+   display: flex;
+   justify-content: center;
+}
+#counties{
+    width: 300px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.list-wrapper{
+    width: 232px;
+    height: auto;
+    background: rgb(242, 242, 242);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(217, 217, 217);
+}
+#demo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#name-country{
+    width:200px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+#name-university,#country,#web-page{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#name-university{
+    font-weight: bold;
+}
+#country{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+#web-page{
+    font-size: 12px;
+    color: rgb(0, 98, 255);
+    text-decoration: none;
+}
+#loading {
+    margin: auto;
+    margin-top: 60px;
+    border: 10px solid #e3e0e0;
+    border-radius: 50%;
+    border-top: 10px solid rgb(255, 136, 0);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 0.8s linear infinite; /* Safari */
+    animation: spin 0.6s linear infinite;
+}
+    /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

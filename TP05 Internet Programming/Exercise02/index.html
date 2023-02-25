@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ------------------------------ link font ------------------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Exercise<span> 02</span></h1>
+    <div class="main">
+        <p id="img">🧐</p>
+        <p id="title">I know you <span>Gender</span></p>
+        <div class="input-values">
+            <input type="text" id="myText" placeholder="Tell me your name">
+            <button onclick="fetchNewGender();">Guess</button>
+        </div>
+        <div class="display"> 
+            <div id="loading" hidden></div>
+            <div id="name">Name</div>
+            <div id="gender">Gender</div>
+            <div id="probability">%</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span{
+    color: rgb(13, 0, 255);
+}
+.main{
+    margin: auto;
+    width: 400px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px 1px black;
+}
+p{
+    text-align: center;
+}
+#img{
+    font-size: 80px;
+    margin-top: 10px;
+}
+#title{
+    font-family: Irish Grover;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.input-values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+button{
+    background: blue;
+    border-color: blue;
+    color: white;
+}
+.display{
+    margin: auto;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    background: rgb(237, 235, 235);
+    border-radius: 8px;
+}
+#name,#gender,#probability{
+    text-align: center;
+}
+#name{
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+}
+#gender{
+   color: rgb(255, 89, 0);
+   font-size: 30px;
+}
+#probability{
+    color: rgb(0, 136, 255);
+    font-size: 20px;
+}
+
+#loading {
+    margin: auto;
+    border: 13px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 13px solid blue;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 0.3s linear infinite; /* Safari */
+    animation: spin 0.9s linear infinite;
+}
+    /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
