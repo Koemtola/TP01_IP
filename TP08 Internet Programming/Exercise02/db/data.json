@@ -1,0 +1,44 @@
+[
+    {
+        "email": "test123@gmail.com",
+        "password": "12345",
+        "username": "tola",
+        "gender": "male",
+        "dob": "22-5-2021"
+    },
+    {
+        "email": "test123@gmail.com",
+        "password": "12345",
+        "username": "tola",
+        "gender": "male",
+        "dob": "22-5-2021"
+    },
+    {
+        "email": "test123@gmail.com",
+        "password": "12345",
+        "username": "tola",
+        "gender": "male",
+        "dob": "22-5-2021"
+    },
+    {
+        "email": "test123@gmail.com",
+        "password": "12345",
+        "username": "tola",
+        "gender": "male",
+        "dob": "22-5-2021"
+    },
+    {
+        "email": "test12f3@gmail.com",
+        "password": "1234fss5",
+        "username": "tolas",
+        "gender": "male",
+        "dob": "22-5-2021"
+    },
+    {
+        "email": "12345@gmail.com",
+        "password": "12345d",
+        "username": "tola",
+        "gender": "male",
+        "dob": "22-5-2021"
+    }
+]
