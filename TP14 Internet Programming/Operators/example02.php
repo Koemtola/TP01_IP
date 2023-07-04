@@ -1,5 +1,5 @@
 <?php
-    echo "Example 2 of operator <br>";
+    echo "Example 02 : Operator <br>";
     $var="value";
     echo $var . "<br>";
     $var=1;

@@ -1,5 +1,6 @@
 <?php
-    echo "Example 02 : Do-While Loop <br><br>";
+    echo "<span style='color: blue;'>Example 02 :</span> 
+    <span style='color: green;'>Do-While Loop </span><br>";
     $i=0;
     do{
         $i++;

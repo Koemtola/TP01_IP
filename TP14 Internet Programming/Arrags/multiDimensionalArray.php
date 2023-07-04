@@ -1,5 +1,6 @@
 <?php
     echo "<span style='color: blue;'>Example 02 :</span> <span style='color: green;'>Multi-Dimensinal Array </span><br>";
+    
     $multiDArray=array(
         "A"=>array(0=>"red",2=>"blue",3=>"green"),
         "B"=>array(1=>"orange",2=>"black"),

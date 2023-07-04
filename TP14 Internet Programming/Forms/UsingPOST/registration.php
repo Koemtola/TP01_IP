@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
             padding: 0;
             margin: 0;
         }
-
         .app {
             margin: auto;
             height: auto;
@@ -23,19 +21,15 @@
             padding: 20px 0px 20px 0px;
             border-radius: 5px;
         }
-
         .wrapper {
             text-align: center;
         }
         button{
             margin-top: 10px;
             padding: 3px;
-
         }
-       
     </style>
 </head>
-
 <body>
     <div class="app">
         <?php
@@ -57,7 +51,5 @@
         echo "</div>";
         ?>
     </div>
-    
 </body>
-
 </html>

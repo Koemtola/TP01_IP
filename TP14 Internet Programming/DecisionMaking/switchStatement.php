@@ -1,5 +1,6 @@
 <?php
-echo "Exampe 03 : Switch statement  <br><br> ";
+echo "<span style='color: blue;'>Example 03 :</span> 
+<span style='color: green;'>Switch statement </span><br>";
 $myFavColor = 'pink';
 switch ($myFavColor) {
     case 'pink':
