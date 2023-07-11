@@ -40,9 +40,9 @@
             <form action="registration.php" method="get">
                 <h4>Registration</h4>
                 <label for="">Name</label><br>
-                <input type="text" name="name"><br>
+                <input type="text" name="name"  required><br>
                 <label for="">Email</label><br>
-                <input type="text" name="email"><br>
+                <input type="text" name="email" required><br>
                 <input type="submit">
             </form>
         </div>
